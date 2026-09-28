@@ -1,13 +1,90 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>나의 VWO 실험 페이지</title>
-  
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Điện Thoại</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .product-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .btn-buy {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-buy:hover {
+            background-color: #219653;
+        }
+    </style>
+</head>
 <body>
-  <h1>안녕하세요! VWO 실험 중입니다.</h1>
-  <p>이 버튼의 색상을 바꾸는 A/B 테스트를 진행할 예정입니다.</p>
-  <button id="test-button">구매하기</button>
+
+    <div class="product-container">
+        <!-- Sản phẩm 1 -->
+        <div class="product-card">
+            <img src="https://placeholder.com" alt="iPhone 15">
+            <div class="product-title">iPhone 15 128GB</div>
+            <div class="product-price">22.990.000đ</div>
+            <button class="btn-buy">Chọn mua</button>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="product-card">
+            <img src="https://placeholder.com" alt="Samsung Galaxy S24">
+            <div class="product-title">Samsung Galaxy S24</div>
+            <div class="product-price">18.990.000đ</div>
+            <button class="btn-buy">Chọn mua</button>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="product-card">
+            <img src="https://placeholder.com" alt="Xiaomi Redmi Note 13">
+            <div class="product-title">Xiaomi Redmi Note 13</div>
+            <div class="product-price">4.990.000đ</div>
+            <button class="btn-buy">Chọn mua</button>
+        </div>
+    </div>
+
 </body>
 </html>
